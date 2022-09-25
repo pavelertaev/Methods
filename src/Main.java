@@ -23,13 +23,13 @@ public class Main {
         }
         return year;
     }
-    public static int getClientOS(int OS) {
-        if (OS == 0) {
+    public static int getClientOs(int os) {
+        if (os == 0) {
             System.out.println("Ваша версия устройства IOS");
-        } else if (OS == 1) {
+        }else {
             System.out.println("Ваша версия устройства Android");
         }
-        return OS;
+        return os;
     }
     public static int getCurrentYear(int year){
         if (year <2015){
@@ -73,9 +73,6 @@ public class Main {
         int years = 2026;
          calculateYears(years);
 
-
-
-
         //Методы задание 2
         //Вспомним задание 2 по условным операторам, где нам необходимо было предложить пользователю облегченную версию приложения.
         //Напишите метод, куда подаются два параметра: тип операционной системы (ОС) ( 0 — iOS или 1 — Android ) и год выпуска устройства.
@@ -88,9 +85,8 @@ public class Main {
         System.out.println("Задание 2");
         int OS = 1;
         int clientDeviceYear = 2020;
-        getClientOS(OS);
+        getClientOs(OS);
         getCurrentYear(clientDeviceYear);
-
 
         //Методы задание 3
         //Возвращаемся к любимой многими задаче на расчет дней доставки банковской карты от банка.
@@ -99,17 +95,6 @@ public class Main {
         int distance = 100;
         calculateDistance(distance);
         System.out.println(calculateDistance(distance));
-
-
-
-
-
-
-
-
-
-
-
 
 
     }
